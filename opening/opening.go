@@ -4,7 +4,7 @@ package opening
 import (
 	"bytes"
 
-	"github.com/notnil/chess"
+	"github.com/cubuzz/chess"
 )
 
 // A Opening represents a specific sequence of moves from the staring position.

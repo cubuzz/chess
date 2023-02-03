@@ -62,8 +62,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/notnil/chess"
-	"github.com/notnil/chess/image"
+	"github.com/cubuzz/chess"
+	"github.com/cubuzz/chess/image"
 )
 
 func main() {

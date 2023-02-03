@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/notnil/chess"
-	"github.com/notnil/chess/uci"
+	"github.com/cubuzz/chess"
+	"github.com/cubuzz/chess/uci"
 )
 
 var StockfishPath string
@@ -126,7 +126,7 @@ func TestLogger(t *testing.T) {
 	}
 }
 
-func TestEngineOutputParsing(t *testing.T){
+func TestEngineOutputParsing(t *testing.T) {
 	scanner := bufio.NewScanner(strings.NewReader(logOutput))
 
 	results, err := uci.ProcessEngineOutput(scanner, nil)
@@ -150,7 +150,7 @@ func TestEngineOutputParsing(t *testing.T){
 	}
 }
 
-func TestMultiPVEngineOutputParsing(t *testing.T){
+func TestMultiPVEngineOutputParsing(t *testing.T) {
 	scanner := bufio.NewScanner(strings.NewReader(multipvTestingString))
 
 	results, err := uci.ProcessEngineOutput(scanner, nil)
